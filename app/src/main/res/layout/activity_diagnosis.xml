@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiagnosisActivity">
+
+    <TextView
+        android:id="@+id/intro"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Diagnosis: "
+        style="@style/TextAppearance.App.Headline3"/>
+    <ImageView
+        android:id = "@+id/scannedImage"
+        app:layout_constraintTop_toBottomOf="@id/intro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:id="@+id/diagnosisText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Diagnosis: "
+        style="@style/TextAppearance.App.Headline4"
+        app:layout_constraintTop_toBottomOf="@id/scannedImage" />
+    <TextView
+        android:id="@+id/probabilityText"
+        app:layout_constraintTop_toBottomOf="@id/diagnosisText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Diagnosis: "
+        style="@style/TextAppearance.App.Headline4"/>
+    <Button
+        android:id="@+id/scanAgainButton"
+        app:layout_constraintBottom_toTopOf="@id/homeButton"
+        android:text="Scan Snother Plant"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/homeButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Go To Home Screen"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
